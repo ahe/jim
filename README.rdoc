@@ -1,3 +1,14 @@
+= This fork
+
+== jim watch
+
+The goal of the jim watch command is to spy your JS files during development.
+Every time you edit, create or delete a JS file, your Jimfile will be updated and your bundle will be recreated.
+The big advantage is that you only have to include your bundled.js file in your HTML page, you don't have to worry about including each file separately.
+
+When you create a new js in your project, a new entry is inserted at the bottom of your Jimfile.
+You'll sometimes have to put it at the correct position by yourself (dependencies).
+
 = jim
 
 jim is your friendly javascript library manager. 

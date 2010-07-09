@@ -82,6 +82,11 @@ module Jim
       logger.info "Wrote #{File.size(path) / 1024}kb"
     end
     
+    # watch for JS changes, update the Jimfile and the bundle
+    def watch(to = nil)
+      Jim::Watcher.watch(to)
+    end
+    
     # compress the files specified in Jimfile into `to`
     def compress(to = nil)
       to = STDOUT if stdout

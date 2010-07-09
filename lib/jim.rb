@@ -44,6 +44,7 @@ module Jim
   autoload :Installer, 'jim/installer'
   autoload :Index, 'jim/index'
   autoload :Bundler, 'jim/bundler'
+  autoload :Watcher, 'jim/watcher'  
   autoload :VersionParser, 'jim/version_parser'
   autoload :CLI, 'jim/cli'
 end
